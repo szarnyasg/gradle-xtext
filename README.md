@@ -1,0 +1,5 @@
+# gradle-xtext
+
+```
+./gradlew jetty
+```
