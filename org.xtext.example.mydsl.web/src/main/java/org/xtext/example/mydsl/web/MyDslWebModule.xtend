@@ -3,11 +3,20 @@
  */
 package org.xtext.example.mydsl.web
 
+import com.google.inject.Binder
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor
+import org.eclipse.xtext.formatting2.FormatterPreferenceValuesProvider
+import org.eclipse.xtext.formatting2.FormatterPreferences
+import org.eclipse.xtext.preferences.IPreferenceValuesProvider
 
 /**
  * Use this class to register additional components to be used within the web application.
  */
 @FinalFieldsConstructor
 class MyDslWebModule extends AbstractMyDslWebModule {
+
+	def void configureIPreferenceValuesProvider(Binder binder) {
+		binder.bind(IPreferenceValuesProvider).annotatedWith(FormatterPreferences).to(FormatterPreferenceValuesProvider)
+	}
+
 }
