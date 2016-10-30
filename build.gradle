@@ -4,11 +4,12 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.xtext:xtext-gradle-plugin:1.0.2'
+		classpath 'org.xtext:xtext-idea-gradle-plugin:1.0.2'
 	}
 }
 
 subprojects {
-	ext.xtextVersion = '2.10.0'
+	ext.xtextVersion = '2.9.2'
 	repositories {
 		jcenter()
 	}
@@ -20,7 +21,7 @@ subprojects {
 	apply plugin: 'eclipse'
 	apply plugin: 'idea'
 	
-	group = 'org.xtext.example.mydsl'
+	group = 'xtexttest3'
 	version = '1.0.0-SNAPSHOT'
 	
 	sourceCompatibility = '1.8'

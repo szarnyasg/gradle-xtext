@@ -1,3 +1,4 @@
-include 'org.xtext.example.mydsl'
-include 'org.xtext.example.mydsl.ide'
-include 'org.xtext.example.mydsl.web'
+include 'xtexttest3'
+include 'xtexttest3.ide'
+include 'xtexttest3.idea'
+include 'xtexttest3.web'
